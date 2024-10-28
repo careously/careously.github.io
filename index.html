@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bookishly</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./content/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Stint+Ultra+Expanded&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./content/images/logo.png" />
+      <h1 class="title">Bookishly</h1>
+    </header>
+
+    <section>
+      <div class="new-container">
+        <h2 class="title">Add a New Book!</h2>
+        <button id="addNewBtn" class="add-new font">Add Book</button>
+      </div>
+    </section>
+
+    <section>
+      <form id="myForm" class="container">
+        <div class="header">
+          <img class="book-cover" />
+          <div class="book-info">
+            <input
+              id="newTitle"
+              class="book-title title"
+              type="text"
+              placeholder="Add Title"
+            />
+            <input
+              id="newAuthor"
+              class="author font"
+              type="text"
+              placeholder="Add Author"
+            />
+          </div>
+        </div>
+        <div class="rating">
+            <div class="rating">
+                <i class="bx bxs-star bx-sm" style="--i: 0;"></i>
+                <i class="bx bxs-star bx-sm" style="--i: 1;"></i>
+                <i class="bx bxs-star bx-sm" style="--i: 2;"></i>
+                <i class="bx bxs-star bx-sm" style="--i: 3;"></i>
+                <i class="bx bxs-star bx-sm" style="--i: 4;"></i>
+              </div>
+          <p class="final-rating font">/ 5</p>
+        </div>
+        <textarea id="newReview" class="review font" type="text"></textarea>
+        <div class="form-btn">
+          <button id="addBookBtn" class="font">Add Book</button>
+          <button id="closeBtn" class="font close">Close</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="body">
+      <!-- <div id="container" class="container">
+        <div class="header">
+          <img class="book-cover" />
+          <div class="book-info">
+            <h3 class="book-title title">The Way of Kings</h3>
+            <p class="author font">Brandon Sanderson</p>
+          </div>
+        </div>
+        <div class="rating">
+          <div>
+            <i class="bx bxs-star bx-sm"></i>
+            <i class="bx bxs-star bx-sm"></i>
+            <i class="bx bxs-star bx-sm"></i>
+            <i class="bx bxs-star bx-sm"></i>
+            <i class="bx bxs-star bx-sm"></i>
+          </div>
+          <p class="final-rating font">/ 5</p>
+        </div>
+        <p class="review font">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          nemo voluptatibus eius mollitia animi, at odit optio quod, eligendi ab
+          aperiam debitis! Culpa placeat fugiat ratione fugit ea nobis ducimus?
+        </p>
+      </div> -->
+    </section>
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

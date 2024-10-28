@@ -1,0 +1,179 @@
+:root {
+    --dark-pink : #FF6E79;
+    --dark-star : #b35159;
+    --pink: #FFD2D2;
+    --blue: #89D1F4;
+    --yellow: #fef2b6;
+    --dark : #462E4C;
+    --font: #59435e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+
+.title {
+    font-family: 'Stint Ultra Expanded';
+    color: var(--dark);
+}
+
+.font {
+    font-family: Montserrat;
+    color: var(--font);
+}
+
+
+/* Heading Styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: 75px;
+}
+
+header img {
+    height: 75px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* New Book Container */
+.new-container {
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--dark-pink);
+}
+
+.add-new {
+    width: 100px;
+    height: 35px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--yellow);
+}
+
+/* Review Styles */
+
+.container {
+    width: 750px;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--dark-pink);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--pink);
+}
+
+.book-cover {
+    height: 100px;
+    width: 75px;
+    border-right: 4px solid #462E4C;
+    background-color: var(--yellow);
+}
+
+.book-info {
+    margin: 0 0 0 25px;
+}
+
+.book-title {
+    margin: 5px 0;
+    font-size: 1.75rem;
+}
+
+.rating {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.bxs-star {
+    color: var(--dark-star);
+}
+
+.final-rating {
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.review {
+    height: 250px;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--pink);
+}
+
+/* Form Styling */
+form {
+    position: absolute;
+    top: 145px;
+    display: none;
+    z-index: 10;
+}
+
+form .book-info {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 4px solid #462E4C;
+    padding: 2px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.form-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    background-color: var(--pink);
+}
+
+form button {
+    width: 100px;
+    height: 35px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 4px solid #462E4C;
+    background-color: var(--yellow);
+}
+
+/* rating stars */
+form .bxs-star:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.star {
+    color: var(--yellow);
+}
