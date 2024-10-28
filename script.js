@@ -3,6 +3,8 @@ const body = document.getElementById('body');
 const addNewBtn = document.getElementById('addNewBtn');
 const addBookBtn = document.getElementById('addBookBtn');
 
+const closeBtn = document.getElementById('closeBtn');
+
 const postContainer = document.getElementById('container');
 
 /* reveal new book form */
@@ -10,25 +12,29 @@ addNewBtn.addEventListener('click', function() {
     document.getElementById('myForm').style.display = 'block';
     body.style.opacity = '0.5'
 
-    console.log('you opened new book thing')
+    console.log('you opened new book thing');
+});
+
+/* close new book form */
+closeBtn.addEventListener('click', function() {
+  document.getElementById('myForm').style.display = 'none';
+  body.style.opacity = '1';  
 });
 
 /* add new book form */
 addBookBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    const closeBtn = document.getElementById('closeBtn');
+  
     /* values of user input */
-    
     const newTitle = document.getElementById('newTitle').value;
     const newAuthor = document.getElementById('newAuthor').value;
     const newReview = document.getElementById('newReview').value;
 
     /* prevent default */
+    event.preventDefault();
     if (newTitle === '' || newAuthor === '' || newReview === '') {
-        alert('Please fill out all fields');
-        return;
-    }
+      alert('Please fill out all fields');
+      return;
+  }
 
     /* create new post element */
     const newPost = document.createElement('div');
@@ -54,17 +60,12 @@ addBookBtn.addEventListener('click', function(event) {
         <p class="review font">${newReview}</p>
         `;
 
-    body.insertBefore(newPost, body.firstChild)
+    body.insertBefore(newPost, body.firstChild);
 
     /* star rating system */
     
-
     document.getElementById('myForm').style.display = 'none';
     body.style.opacity = '1'
 
-    closeBtn.addEventListener('click', function() {
-        document.getElementById('myForm').style.display = 'none';
-        body.style.opacity = '1'  
-    })
-
-})
+    
+});
